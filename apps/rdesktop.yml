@@ -39,7 +39,7 @@
     - name: 'Setting {{pgrole}} Volumes'
       set_fact:
         pg_volumes:
-          - '/opt/appdata/{{pgrole}}:/beets'
+          - '/opt/appdata/{{pgrole}}:/rdesktop'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/etc/localtime:/etc/localtime:ro'
 
